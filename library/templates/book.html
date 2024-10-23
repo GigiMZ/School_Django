@@ -1,0 +1,13 @@
+title: {{ book.title }}
+<br>
+content: {{ book.content }}
+<br>
+author: {{ book.author }}
+<br>
+views: {{ book.view_count }}
+
+<br>
+<a href="{% url 'update-book' book.id %}"> udpate</a>
+<br>
+
+<a href="{% url 'home' %}"> go back</a>

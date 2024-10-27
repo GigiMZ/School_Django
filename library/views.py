@@ -7,7 +7,7 @@ def home(request):
     return render(request, 'home.html', context={'books': books})
 
 def detail_book(request, pk):
-    book = get_list_or_404(Library, pk)
+    book = get_list_or_404(Library, pk=pk)
     return render(request, 'book.html', context={'book': book})
 
 def create_book(request):

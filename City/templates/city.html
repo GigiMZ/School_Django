@@ -1,0 +1,12 @@
+City: {{city.name}}
+<br>
+Country: {{city.country}}
+<br>
+Population: {{city.population}}
+<br>
+<br>
+<a href="{% url 'update-city' city.id %}">Update</a>
+<br>
+<a href="{% url 'delete-city' city.id %}">Delete</a>
+<br>
+<a href="{% url 'home' %}">Home</a>
